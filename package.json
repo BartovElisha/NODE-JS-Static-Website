@@ -1,0 +1,22 @@
+{
+  "name": "node-js-static-website",
+  "version": "1.0.0",
+  "description": "Node Js Module, Static Website Task",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BartovElisha/NODE-JS-Static-Website.git"
+  },
+  "author": "Elisha Bartov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BartovElisha/NODE-JS-Static-Website/issues"
+  },
+  "homepage": "https://github.com/BartovElisha/NODE-JS-Static-Website#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

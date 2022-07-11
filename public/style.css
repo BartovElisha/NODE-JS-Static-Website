@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+}
+
+.header {
+  text-align: center;
+}
+
+.h1 {
+  color: blue;
+}
+
+.clock {
+  margin: 50px auto;
+  width: 400px;
+  height: 400px;
+  border-style: solid;
+  border-radius: 50%;
+  border-color: black;
+  position: relative;
+}
+
+.image {
+  display: block;
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  z-index: -1;
+}
+
+.seconds-arrow,
+.minutes-arrow,
+.hours-arrow {
+  display: block;
+  position: absolute;
+}
+
+.seconds-arrow .seconds-arrow-property,
+.seconds-arrow .minutes-arrow-property,
+.seconds-arrow .hours-arrow-property,
+.minutes-arrow .seconds-arrow-property,
+.minutes-arrow .minutes-arrow-property,
+.minutes-arrow .hours-arrow-property,
+.hours-arrow .seconds-arrow-property,
+.hours-arrow .minutes-arrow-property,
+.hours-arrow .hours-arrow-property {
+  width: 400px;
+  height: 400px;
+}
+
+.seconds-arrow .seconds-arrow-property,
+.minutes-arrow .seconds-arrow-property,
+.hours-arrow .seconds-arrow-property {
+  fill: red;
+}
+/*# sourceMappingURL=style.css.map */

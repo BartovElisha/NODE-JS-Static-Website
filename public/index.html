@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evelin's & Father's Watch</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Link to scc style file -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Evelin's & Father's Watch</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown link
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="date-time" class="container">
+        <h1 id="last-date-time"></h1>
+    </div>
+
+    <div class="clock">
+
+        <img class="image" src="./Images/clock-face.png">
+
+        <!-- hours Arrow -->
+        <div class="hours-arrow">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 640" class="hours-arrow-property">
+                <defs>
+                    <path d="M313.51 320L316.22 30L320 30L320 30L324.1 30L326.49 320L319.34 320L319.34 320L313.51 320Z"
+                        id="c4rhydBSZm"></path>
+                    <path
+                        d="M326.39 320C326.39 323.52 323.52 326.39 320 326.39C316.48 326.39 313.62 323.52 313.62 320C313.62 316.48 316.48 313.62 320 313.62C323.52 313.62 326.39 316.48 326.39 320Z"
+                        id="b1McBkIkl2"></path>
+                </defs>
+                <g>
+                    <g>
+                        <g>
+                            <use xlink:href="#c4rhydBSZm" opacity="1" fill="#060606" fill-opacity="1"></use>
+                        </g>
+                        <g>
+                            <use xlink:href="#b1McBkIkl2" opacity="1" fill="#080808" fill-opacity="1"></use>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </div>
+
+        <!-- Minutes Arrow -->
+        <div class="minutes-arrow">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 640" class="minutes-arrow-property">
+                <defs>
+                    <path d="M313.51 320L317.88 0L320 0L320 0L321.89 0L326.49 320L319.34 320L319.34 320L313.51 320Z"
+                        id="f16VF5B8d8"></path>
+                    <path
+                        d="M326.39 320C326.39 323.52 323.52 326.39 320 326.39C316.48 326.39 313.62 323.52 313.62 320C313.62 316.48 316.48 313.61 320 313.61C323.52 313.61 326.39 316.48 326.39 320Z"
+                        id="ba9vHWkuf"></path>
+                </defs>
+                <g>
+                    <g>
+                        <g>
+                            <use xlink:href="#f16VF5B8d8" opacity="1" fill="#060606" fill-opacity="1"></use>
+                        </g>
+                        <g>
+                            <use xlink:href="#ba9vHWkuf" opacity="1" fill="#080808" fill-opacity="1"></use>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </div>
+
+        <!-- Secconds Arrow -->
+        <div class="seconds-arrow">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 640" class="seconds-arrow-property">
+                <defs>
+                    <path
+                        d="M317.59 1.47C317.59 69.17 317.59 270.83 317.59 338.53C317.59 339.34 318.27 340 319.11 340C319.8 340 320.38 340 321.07 340C321.91 340 322.59 339.34 322.59 338.53C322.59 270.83 322.59 69.17 322.59 1.47C322.59 0.66 321.91 0 321.07 0C320.38 0 319.8 0 319.11 0C318.27 0 317.59 0.66 317.59 1.47Z"
+                        id="c4aEqkzj0J"></path>
+                    <path
+                        d="M317.59 338.53C317.59 339.34 318.27 340 319.11 340C319.8 340 320.38 340 321.07 340C321.91 340 322.59 339.34 322.59 338.53C322.59 270.83 322.59 69.17 322.59 1.47C322.59 0.66 321.91 0 321.07 0C320.38 0 319.8 0 319.11 0C318.27 0 317.59 0.66 317.59 1.47C317.59 69.17 317.59 270.83 317.59 338.53Z"
+                        id="e2UeQsMQf6"></path>
+                    <path
+                        d="M317.59 338.53C317.59 339.34 318.27 340 319.11 340C319.8 340 320.38 340 321.07 340C321.91 340 322.59 339.34 322.59 338.53C322.59 270.83 322.59 69.17 322.59 1.47C322.59 0.66 321.91 0 321.07 0C320.38 0 319.8 0 319.11 0C318.27 0 317.59 0.66 317.59 1.47C317.59 69.17 317.59 270.83 317.59 338.53Z"
+                        id="b12vBlxDKO"></path>
+                    <path
+                        d="M313.62 320C313.62 316.48 316.48 313.61 320 313.61C323.52 313.61 326.39 316.48 326.39 320C326.39 323.52 323.52 326.39 320 326.39C316.48 326.39 313.62 323.52 313.62 320Z"
+                        id="b1HtKe2om1"></path>
+                    <path
+                        d="M313.62 320C313.62 316.48 316.48 313.61 320 313.61C323.52 313.61 326.39 316.48 326.39 320C326.39 323.52 323.52 326.39 320 326.39C316.48 326.39 313.62 323.52 313.62 320Z"
+                        id="b1vnTYTB2q"></path>
+                    <path
+                        d="M322.36 330.13C323.5 330.13 324.42 331.05 324.42 332.19C324.42 335.75 324.42 344.38 324.42 347.94C324.42 349.08 323.5 350 322.36 350C321.01 350 318.99 350 317.64 350C316.5 350 315.58 349.08 315.58 347.94C315.58 344.38 315.58 335.75 315.58 332.19C315.58 331.05 316.5 330.13 317.64 330.13C318.99 330.13 321.01 330.13 322.36 330.13Z"
+                        id="e1MHfKoJZm"></path>
+                    <path
+                        d="M322.63 320C322.63 321.45 321.45 322.63 320 322.63C318.55 322.63 317.37 321.45 317.37 320C317.37 318.55 318.55 317.37 320 317.37C321.45 317.37 322.63 318.55 322.63 320Z"
+                        id="d1Wr2D0chK"></path>
+                </defs>
+                <g>
+                    <g>
+                        <g>
+                            <use xlink:href="#c4aEqkzj0J" opacity="1" fill-opacity="1"></use>
+                            <g>
+                                <use xlink:href="#c4aEqkzj0J" opacity="1" fill-opacity="0" stroke="#000000"
+                                    stroke-width="1" stroke-opacity="0"></use>
+                            </g>
+                        </g>
+                        <g>
+                            <use xlink:href="#e2UeQsMQf6" opacity="1" fill-opacity="1"></use>
+                            <g>
+                                <use xlink:href="#e2UeQsMQf6" opacity="1" fill-opacity="0" stroke="#000000"
+                                    stroke-width="1" stroke-opacity="0"></use>
+                            </g>
+                        </g>
+                        <g>
+                            <use xlink:href="#b12vBlxDKO" opacity="1" fill="#000000" fill-opacity="0"></use>
+                            <g>
+                                <use xlink:href="#b12vBlxDKO" opacity="1" fill-opacity="0" stroke="#000000"
+                                    stroke-width="1" stroke-opacity="0"></use>
+                            </g>
+                        </g>
+                        <g>
+                            <use xlink:href="#b1HtKe2om1" opacity="1" fill-opacity="1"></use>
+                            <g>
+                                <use xlink:href="#b1HtKe2om1" opacity="1" fill-opacity="0" stroke="#000000"
+                                    stroke-width="1" stroke-opacity="0"></use>
+                            </g>
+                        </g>
+                        <g>
+                            <use xlink:href="#b1vnTYTB2q" opacity="1" fill="#000000" fill-opacity="0"></use>
+                            <g>
+                                <use xlink:href="#b1vnTYTB2q" opacity="1" fill-opacity="0" stroke="#000000"
+                                    stroke-width="1" stroke-opacity="0"></use>
+                            </g>
+                        </g>
+                        <g>
+                            <use xlink:href="#e1MHfKoJZm" opacity="1" fill-opacity="1"></use>
+                        </g>
+                        <g>
+                            <use xlink:href="#d1Wr2D0chK" opacity="1" fill-opacity="1"></use>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+
+        </div>
+    </div>
+
+    <footer></footer>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

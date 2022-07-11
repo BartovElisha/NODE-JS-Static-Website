@@ -1,0 +1,56 @@
+$watch-size: 400px;
+
+* {
+    margin: 0;
+}
+
+.header {
+    text-align: center;
+}
+
+.h1 {
+    color: green;
+}
+
+.clock {
+    margin: 50px auto;
+    width: $watch-size;
+    height: $watch-size;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: black;
+    position: relative;
+}
+
+.image {
+    display: block;
+    position: absolute;
+
+    width: $watch-size;
+    height: $watch-size;
+    z-index: -1;
+}
+
+.seconds-arrow, 
+.minutes-arrow,
+.hours-arrow {
+    display: block;
+    position: absolute;
+
+    .seconds-arrow-property,
+    .minutes-arrow-property,
+    .hours-arrow-property
+     {
+        width: $watch-size;
+        height: $watch-size;
+    }
+
+    .seconds-arrow-property {
+        fill: red;
+    }
+
+}
+
+
+
+
